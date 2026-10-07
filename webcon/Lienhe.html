@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+</head>
+<style>
+    body{
+        background-color:antiquewhite;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        padding-left: 70px;
+        background-image: url(../IMAGES/anhbiatren.jpg);
+        width: 1420px;
+        margin: 10px auto 5px auto;
+        height: 280px;
+        background-size: cover;       
+        background-position: center;  
+        background-repeat: no-repeat;
+        border-radius: 12px;
+    }
+
+    nav {
+            height: 50px;
+            width: 1490px; 
+            margin: 0 auto 20px auto;
+            background-color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: yellow;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: deeppink;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+     p{
+        color: darkred;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        text-align: center;
+    }
+    .DN {
+        background-color: pink;
+        width: fit-content;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 8px;
+    }
+        
+    .DK {
+        background-color: pink;
+    }
+
+    .DK:hover {
+        background-color: plum;
+    } 
+
+    table {
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    .haikhung {
+        display: flex;
+        justify-content: center; 
+        align-items: flex-start; 
+        gap: 30px;               
+        width: 1000px;           
+        margin: 0 auto 40px auto;  
+        clear: both;   
+    }
+    main {
+        width: 600px;                               
+        padding: 25px;                              
+        background-color:pink;              
+        border-radius: 16px;                        
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        text-align: left;
+        color: black;
+        font-family: 'Times New Roman', Times, serif; 
+        margin: 0; 
+    }
+
+    .khung1 {
+        border: 2px dashed rgb(228, 55, 7); 
+        background-color: white;    
+        padding: 15px 20px;             
+        border-radius: 8px;             
+        width: 320px; 
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .tieude {
+        font-weight: bold;
+        color: rgb(228, 55, 7);
+        font-size: 18px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .phai {
+        display: flex;
+        flex-direction: column; 
+        gap: 15px;               
+        width: 320px;   
+    }        
+
+    .khung1 ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .khung1 li {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+    }
+    .tien {
+     display:flex;
+     width: auto;
+    justify-content: center;
+    padding-top: 15px;
+    }
+    .mua:hover {
+     background-color:yellow;
+     }
+
+    footer {
+        min-height: 55px;
+        background-color: bisque;
+        text-align: center; 
+        padding: 15px 0;
+    }
+
+    footer p, footer td {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+</style>
+<body>
+    <header></header>
+    <nav>
+       <a href="../index.html">Trang chủ</a>
+        <a href="../webcon/tranggioithieu.html" target="_blank">Giới Thiệu</a>
+        <a href="cuahang.html" target="_blank">Cửa hàng</a>
+        <a href="../webcon/Chude.html" target="_blank">Chủ đề</a>
+        <a href="../webcon/Lienhe.html" target="_blank">Liên hệ</a>
+        <a href="../webcon/camket.html" target="_blank">Cam kết</a>
+    </nav>
+    <p>Đăng ký tư vấn & Đặt mua hoa</p>
+    <div class="haikhung">
+        <main>
+            <table>
+                <tr>
+                    <td><label for="HvT"><b>Họ và tên:</b></label></td>
+                    <td><input type="text" id="HvT" name="HovaTen" placeholder="Nhập họ tên..."></td>
+                </tr>
+                <tr>
+                    <td><label for="DC"><b>Email:</b></label></td>
+                    <td><input type="email" id="DC" name="diachi" placeholder="Nhập Email..."></td>
+                </tr>
+                <tr>
+                    <td><b>Giới tính:</b></td>
+                    <td>
+                        <label for="nam">Nam</label> <input type="radio" id="nam" name="gioitinh" value="Nam">
+                        <label for="nu">Nữ</label> <input type="radio" id="nu" name="gioitinh" value="Nữ">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="soluong"><b>Số lượng bó hoa:</b></label></td>
+                    <td><input type="number" id="soluong" name="soluonghoa" placeholder="Số lượng..."></td>
+                </tr>
+                <tr>
+                    <td><b>Loại hoa yêu thích:</b></td>
+                    <td>
+                        <select name="loaihoa">
+                            <option>Hoa cẩm tú cầu</option>
+                            <option>Hoa hồng phấn</option>
+                            <option>Hoa baby</option>
+                            <option>Hoa tulip trắng</option>
+                            <option>Hoa cúc tana</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="hoa"><b>Dịch vụ kèm theo:</b></label></td>
+                    <td>
+                        <input type="checkbox" name="goiqua"> Gói quà cao cấp <br>
+                        <input type="checkbox" name="thiep"> Tặng kèm thiệp chúc mừng <br>
+                        <input type="checkbox" name="giaohangnhanh"> Giao hàng hỏa tốc <br>
+                        <input type="checkbox" name="giuchatluong"> Bảo quản hoa tươi 3 ngày <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Yêu cầu khác:</b></td>
+                    <td><textarea name="yeucau" rows="4" placeholder="Nhập yêu cầu chi tiết về mẫu hoa hoặc thời gian giao..."></textarea></td>
+                <tr>
+                    <td colspan="2">
+                        <div class="tien">
+                            <input type="button" class="mua" value="Đăng ký mua" onclick="alert('Bạn đã đăng ký đặt hoa thành công!')">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+        <div class="khung1">
+            <div class="tieude">ƯU ĐÃI & CAM KẾT ĐẶC BIỆT</div>
+            <ul>
+                <li>📍 Địa chỉ: Số 123, Đường Hoa Hồng, TP. Cao Lãnh, Đồng Tháp.</li>
+                <li>☎️ Hotline/Zalo: 0123 456 789 (Hỗ trợ 24/7).</li>  
+                <li>📩 Email: Chi@tiemhoatuoi.com.</li>
+                <li>⏰ Giờ mở cửa: 7:30 sáng - 21:00 tối (Tất cả các ngày trong tuần).</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Cửa hàng Hoa tươi. Bản quyền thuộc về CHI.</p>
+        <p>Địa chỉ: Số 123, Đường Hoa Hồng, TP. Cao Lãnh, Đồng Tháp</p>
+        <p>Điện thoại: 0123 456 789 - Email: Chi@tiemhoatuoi.com</p>
+    </footer>
+</body>
+</html>

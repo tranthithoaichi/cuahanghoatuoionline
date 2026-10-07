@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chủ đề - CAMELLIA BOUTIQUE</title>
+    <style>
+        body {
+            background-color: #fdf2f4;
+            margin: 0;           
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:white;
+            display: flex;
+            align-items: center;
+            padding-left: 70px;
+            background-image: url(../IMAGES/anhbiatren.jpg);
+            width: 1420px;
+            margin: 10px auto 5px auto;
+            height: 280px;
+            background-size: cover;       
+            background-position: center;  
+            background-repeat: no-repeat;
+            border-radius: 12px;
+        }
+        nav {
+            height: 50px;
+            width: 1490px; 
+            margin: 0 auto 20px auto;
+            background-color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: yellow;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: deeppink;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        .container-chude {
+            width: 1100px;
+            margin: 30px auto 50px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #d9534f;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .mo-ta-trang {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .box-danh-muc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 2px dashed #ffe4e1;
+        }
+
+        .tab-chude {
+            background-color: #ffffff;
+            color: #d9534f;
+            border: 2px solid lightpink;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tab-chude:hover {
+            background-color: deeppink;
+            color: yellow;
+            border-color: deeppink;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 20, 147, 0.3);
+        }
+
+        .grid-chude {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .card-chude {
+            width: 230px;
+            background-color: #fffaf0;
+            border: 2px solid lightpink;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .card-chude:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(255, 20, 147, 0.2);
+            border-color: deeppink;
+        }
+
+        .card-chude img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-chude h3 {
+            color: #333;
+            font-size: 16px;
+            margin: 12px 10px 5px 10px;
+        }
+
+        .card-chude p {
+            color: #777;
+            font-size: 13px;
+            margin: 0 10px 15px 10px;
+        }
+
+        footer {
+            min-height: 55px;
+            background-color: bisque;
+            text-align: center; 
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 13px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <a href="../index.html">Trang chủ</a>
+        <a href="tranggioithieu.html" target="_blank">Giới Thiệu</a>
+        <a href="cuahang.html" target="_blank">Cửa hàng</a>
+        <a href="Chude.html" target="_blank">Chủ đề</a>
+        <a href="Lienhe.html" target="_blank">Liên hệ</a>
+        <a href="camket.html" target="_blank">Cam kết</a>
+    </nav>
+
+    <div class="container-chude">
+        <h1>BỘ SƯU TẬP HOA THEO CHỦ ĐỀ</h1>
+        <div class="mo-ta-trang">"Lựa chọn những đóa hoa ý nghĩa nhất dành riêng cho từng khoảnh khắc quan trọng của bạn."</div>
+
+        <!-- Thanh danh mục phía trên (Tách riêng Hoa Hồng và Hoa Độc Bản) -->
+        <div class="box-danh-muc">
+            <a href="hoacuoi.html" class="tab-chude">💍 Hoa Cưới</a>
+            <a href="hoatotnghiep.html" class="tab-chude">🎓 Hoa Tốt Nghiệp</a>
+            <a href="hoahong.html" class="tab-chude">🌹 Hoa Hồng</a>
+            <a href="hoadocban.html" class="tab-chude">✨ Hoa Độc Bản</a>
+            <a href="hoadeban.html" class="tab-chude">🪴 Hoa Để Bàn</a>
+        </div>
+
+        <!-- Các card chủ đề bên dưới (Tách riêng từng danh mục) -->
+        <div class="grid-chude">
+            <a href="hoacuoi.html" class="card-chude">
+                <img src="../IMAGES/anhbia.jpg" alt="Hoa Cưới">
+                <h3>Bộ Sưu Tập Hoa Cưới</h3>
+                <p>Xem toàn bộ các mẫu hoa cưới</p>
+            </a>
+
+            <a href="hoatotnghiep.html" class="card-chude">
+                <img src="../IMAGES/hoatotnghiep4.jpg" alt="Hoa Tốt Nghiệp">
+                <h3>Bộ Sưu Tập Tốt Nghiệp</h3>
+                <p>Xem toàn bộ các mẫu hoa tốt nghiệp</p>
+            </a>
+
+            <a href="hoahong.html" class="card-chude">
+                <img src="../IMAGES/hongchumjulietJuliet.png" alt="Hoa Hồng">
+                <h3>Bộ Sưu Tập Hoa Hồng</h3>
+                <p>Xem toàn bộ các mẫu hoa hồng nhập</p>
+            </a>
+            
+            <a href="hoadocban.html" class="card-chude">
+                <img src="../IMAGES/hoababy.jpg" alt="Hoa Độc Bản">
+                <h3>Bộ Sưu Tập Hoa Độc Bản</h3>
+                <p>Xem toàn bộ các mẫu độc bản</p>
+            </a>
+
+            <a href="hoadeban.html" class="card-chude">
+                <img src="../IMAGES/hoadebango1.png" alt="Hoa Để Bàn">
+                <h3>Bộ Sưu Tập Hoa Để Bàn</h3>
+                <p>Xem toàn bộ các mẫu để bàn, sự kiện</p>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Cửa hàng Hoa tươi. Bản quyền thuộc về CHI.</p>
+        <p>Địa chỉ: Số 123, Đường Hoa Hồng, TP. Cao Lãnh, Đồng Tháp</p>
+        <p>Điện thoại: 0123 456 789 - Email: Chi@hoatuoi.com</p>
+    </footer>
+</body>
+</html>

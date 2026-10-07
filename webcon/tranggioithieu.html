@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+</head>
+<style>
+    body{
+        background-color: rgb(255, 245, 191);
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:white;
+        display: flex;
+        align-items:center;
+        padding-left: 60px;
+        background-image: url(../IMAGES/anhbiatren.jpg);
+        width: 100%;
+        max-width: 2000px;
+        height: 250px;
+        background-size: cover;       
+        background-position: center;  
+        background-repeat: no-repeat;
+    }
+    nav {
+            height: 50px;
+            width: 100%; 
+            margin: 0 auto 20px auto;
+            background-color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: yellow;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: deeppink;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+    .gt {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        width: 1000px;
+        margin: 40px auto;
+        flex-direction: row-reverse;
+    }
+
+    .gt p {
+        text-align: justify;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .trong1{
+        margin: 10px;
+        width: 450px;            
+        height: auto;            
+        border-radius: 8px;      
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    #chu_dam{
+        color: red;
+        font-weight: bold;
+    }
+
+
+    .video-va-anh {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px; 
+        margin: 40px auto;
+        flex-wrap: wrap; 
+    }
+
+    .video-section {
+        width: 450px;
+        text-align: center;
+    }
+
+    .video-section b {
+        font-size: 20px;
+        color: firebrick;
+    }
+
+    .video-thumbnail-box {
+        position: relative;
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 3px solid lightpink;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .video-thumbnail-box img {
+        width: 100%;
+        display: block;
+    }
+
+    .anh-ben-canh {
+        width: 450px; 
+    }
+
+    .anh-ben-canh img {
+        width: 100%;
+        border-radius: 8px;
+        border: 3px solid lightpink;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        display: block;
+    }
+
+    footer {
+        min-height: 55px;
+        background-color: bisque;
+        text-align: center; 
+        padding: 15px 0;
+        margin-top: 40px;
+    }
+
+    footer p {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+</style>
+<body>
+   <header></header>
+   <nav>
+        <a href="../index.html">Trang chủ</a>
+        <a href="../webcon/tranggioithieu.html" target="_blank">Giới Thiệu</a>
+        <a href="cuahang.html" target="_blank">Cửa hàng</a>
+        <a href="../webcon/Chude.html" target="_blank">Chủ đề</a>
+        <a href="../webcon/Lienhe.html" target="_blank">Liên hệ</a>
+        <a href="../webcon/camket.html" target="_blank">Cam kết</a>
+    </nav>
+
+    <div class="gt">
+        <img src="../IMAGES/cuahangtrpng.jpg" alt="Bên trong 1" class="trong1">
+        <div class="gioithieu">
+            <p>
+             Chào mừng quý khách bước chân vào <span id="chu_dam">CAMELLIA BOUTIQUE</span> – thiên đường nghệ thuật hoa tươi mang phong cách độc bản giữa lòng thành phố Cao Lãnh!<br><br>
+             Giữa nhịp sống hối hả, cửa hàng của chúng tôi chính là góc nhỏ bình yên lưu giữ những khoảnh khắc ngọt ngào và chân thành nhất. Mỗi tác phẩm hoa tươi tại đây đều là một kiệt tác thủ công được trau chuốt tỉ mỉ từ những đôi bàn tay tài hoa, kết hợp giữa sự tinh tế hiện đại và nét đẹp sang trọng, đẳng cấp.<br><br>
+             Chúng tôi tâm niệm rằng mỗi đóa hoa trao đi không chỉ đơn thuần là một món quà, mà còn là thông điệp yêu thương sâu sắc, là nhịp cầu gắn kết cảm xúc trong mọi dịp kỷ niệm, sinh nhật hay sự kiện đặc biệt của bạn. Hãy để <span id="chu_dam">CAMELLIA BOUTIQUE</span> đồng hành cùng bạn viết nên những kỷ niệm khó quên và thăng hoa cùng những giá trị thẩm mỹ tuyệt mỹ nhất!
+            </p>
+        </div>
+    </div>
+
+    <div class="video-va-anh">
+        <div class="video-section">
+            <a href="#" style="text-decoration: none;"><b>Một ngày làm hoa</b></a><br>
+            <hr style="border: 1px solid lightpink;">
+            <a href="https://youtu.be/BrTXuVlaq4Y?si=qaW9Xrcqb1iWQRDW" target="_blank" class="video-thumbnail-box">
+                <img src="../IMAGES/motngayhoa.jpg" alt="Video giới thiệu Camellia Boutique">
+            </a>
+        </div>
+
+        <div class="anh-ben-canh">
+            <img src="../IMAGES/cuahangtrong2.jpg" alt="Ảnh cửa hàng bên trong">
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Cửa hàng Hoa tươi. Bản quyền thuộc về CHI.</p>
+        <p>Địa chỉ: Số 123, Đường Hoa Hồng, TP. Cao Lãnh, Đồng Tháp</p>
+        <p>Điện thoại: 0123 456 789 - Email: Chi@hoatuoi.com</p>
+    </footer>
+</body>
+</html>

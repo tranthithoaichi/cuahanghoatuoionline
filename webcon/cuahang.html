@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng</title>
+    <style>
+        body {
+            background-color: #fdf2f4;
+            margin: 0;          
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:white;
+            display: flex;
+            align-items: center;
+            padding-left: 70px;
+            background-image: url(../IMAGES/anhbiatren.jpg);
+            width: 1420px;
+            margin: 10px auto 5px auto;
+            height: 280px;
+            background-size: cover;       
+            background-position: center;  
+            background-repeat: no-repeat;
+            border-radius: 12px;
+        }
+        nav {
+            height: 50px;
+            width: 1490px; 
+            margin: 0 auto 20px auto;
+            background-color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: yellow;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: deeppink;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+        .tien {
+            display: flex;
+            width: auto;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .tien input {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 16px;      
+            padding: 6px 14px;     
+            cursor: pointer;      
+            border-radius: 6px;
+            border: 2px solid #ccc;
+            background-color: #fff;
+        }
+        .mua:hover {
+            background-color: yellow;
+            color: deeppink;
+        }
+        .tieude{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #5c4033; 
+            font-size: 18px;
+            line-height: 1.6;
+            font-style: italic;
+            text-align: center; 
+            max-width: 900px;
+            margin: 30px auto;
+        }
+        #top{
+            font-family: 'Lucida Sans', sans-serif;
+            color: firebrick;
+            font-size: 30px;
+            font-weight: bold;
+            display: block; 
+            margin-top: 20px; 
+            letter-spacing: 1px;
+        }
+        .kh{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 70px;
+            max-width: 1500px;     
+            margin: 40px auto;
+            box-sizing: border-box;
+            padding: 0 10px;      
+        }
+        .kk{
+            width: 290px;           
+            background-color: white;
+            border: 4px groove yellow;
+            margin-top: 10px;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .kk img{
+            width: 240px;          
+            height: 240px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .kk img:hover{
+            transform: scale(1.05);
+            box-shadow: 3px 3px darkgray;
+            transition: 0.3s;
+        }
+        .hoa {
+            color: rgb(251, 28, 128);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: center;
+            margin: 12px 0 5px 0;
+            line-height: 1.4;
+        }
+        footer {
+            min-height: 55px;
+            background-color: bisque;
+            text-align: center; 
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        footer p, footer td {
+            font-size: 13px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <a href="../index.html">Trang chủ</a>
+        <a href="../webcon/tranggioithieu.html" target="_blank">Giới Thiệu</a>
+        <a href="cuahang.html" target="_blank">Cửa hàng</a>
+        <a href="../webcon/Chude.html" target="_blank">Chủ đề</a>
+        <a href="../webcon/Lienhe.html" target="_blank">Liên hệ</a>
+        <a href="../webcon/camket.html" target="_blank">Cam kết</a>
+    </nav>
+    
+    <div>
+        <p class="tieude">Mỗi loài hoa đều có đặc tính riêng, nhưng ẩn sâu trong mỗi cánh mỏng, sắc hương ấy lại là một nốt nhạc độc bản trong bản hòa ca của tự nhiên. Có loài rực rỡ kiêu sa để đắm say ánh nhìn, có loài mộc mạc dịu dàng chạm đến những góc mềm yếu nhất trong tâm hồn, và cũng có loài mang sức sống bền bỉ tựa như lời thì thầm của hy vọng.<br>
+        <span id="top">Bộ Sưu Tập Hoa Độc Bản</span></p>
+    </div>
+
+    <div class="kh">
+        <div class="kk">
+            <img src="../IMAGES/camtucauxanh.webp" alt="">
+            <p class="hoa">Hoa cẩm tú cầu xanh<br><b>700.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+        
+        <div class="kk">
+            <img src="../IMAGES/hoa300.jpg" alt="">
+            <p class="hoa">Hoa hồng phấn 300 đóa<br><b>450.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoababy.jpg" alt="">
+            <p class="hoa">Hoa baby<br><b>450.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/tuliptrang.webp" alt="">
+            <p class="hoa">Hoa tulip trắng<br><b>800.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoachuong.png" alt="">
+            <p class="hoa">Hoa chuông<br><b>250.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoacuctana.png" alt="">
+            <p class="hoa">Hoa cúc tana<br><b>250.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoathuytien.jpg" alt="">
+            <p class="hoa">Hoa thủy tiên<br><b>400.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoahongchumsedona.png" alt="">
+            <p class="hoa">Hoa hồng chùm Sedona<br><b>450.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoahongtinhnhan.png" alt="">
+            <p class="hoa">Hoa hồng tình nhân<br><b>450.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoaxanh.avif" alt="">
+            <p class="hoa">Dạ khúc xanh<br><b>350.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoalantuong.png" alt="">
+            <p class="hoa">Hoa lan tường<br><b>400.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoamaudon.jpg" alt="">
+            <p class="hoa">Hoa mẫu đơn<br><b>250.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoamix.png" alt="">
+            <p class="hoa">Bản Giao Hưởng Trắng<br><b>350.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoaocque.png" alt="">
+            <p class="hoa">Hoa ốc quế<br><b>250.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoaphanghong.png" alt="">
+            <p class="hoa">Hoa phang hồng<br><b>350.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hongchumjulietJuliet.png" alt="">
+            <p class="hoa">Hoa hồng chùm Juliet<br><b>400.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hongkembabaytrang.png" alt="">
+            <p class="hoa">Hoa hồng kem <br><b>400.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/họnguliet.png" alt="">
+            <p class="hoa">Hoa hồng Juliet<br><b>400.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hongluandon.png" alt="">
+            <p class="hoa">Hoa hồng Luân Đôn<br><b>400.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoatotnghiep1.avif" alt="">
+            <p class="hoa">Giấc Mơ Hồng<br><b>350.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoatotnghiep2.avif" alt="">
+            <p class="hoa">Bản Giao Hưởng Thanh Xuân<br><b>250.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoatotnghiep3.jpg" alt="">
+            <p class="hoa">Hoa hướng dương<br><b>250.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoatotnghiep4.jpg" alt="">
+            <p class="hoa">Bản Sonate Trắng –<br><b>350.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoatra.jpg" alt="">
+            <p class="hoa">Hoa trà mi <br><b>900.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoalinhlan.jpg" alt="">
+            <p class="hoa">Hoa linh lan<br><b>1.200.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/anhbia.jpg" alt="">
+            <p class="hoa">Dạ Khúc Tình Yêu<br><b>900.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+
+        <div class="kk">
+            <img src="../IMAGES/hoacuoi1.png" alt="">
+            <p class="hoa">Bọt Biển Tình Yêu<br><b>850.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoacuoi1.jpg" alt="">
+            <p class="hoa">Bạch Liên Tinh Khôi<br><b>850.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoacuoi2.jpg" alt="">
+            <p class="hoa">Hoa Calla Lily<br><b>900.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoacuoi3.jpg" alt="">
+            <p class="hoa">Bản Sonate Ngọt Ngào<br><b>800.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoadebango1.png" alt="">
+            <p class="hoa">Ngọn Lửa Tình Yêu<br><b>220.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+            <div class="kk">
+            <img src="../IMAGES/hoadebango2.png" alt="">
+            <p class="hoa">Ký Ức Đại Dương<br><b>220.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoadebangox3.png" alt="">
+            <p class="hoa">Sương Mai Mộc Bản<br><b>220.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+
+        <div class="kk">
+            <img src="../IMAGES/hoadebantron1.png" alt="">
+            <p class="hoa">Vũ Điệu Ánh Mai<br><b>200.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hoadebantron3.png" alt="">
+            <p class="hoa">Hồng Ngọc Kiêu Sa<br><b>200.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+
+        <div class="kk">
+            <img src="../IMAGES/hodebantron2.png" alt="">
+            <p class="hoa">Nguyệt Dạ Xanh<br><b>200.000VND</b></p>
+            <div class="tien">
+                <input type="button" class="mua" value="Mua ngay">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Cửa hàng Hoa tươi. Bản quyền thuộc về CHI.</p>
+        <p>Địa chỉ: Số 123, Đường Hoa Hồng, TP. Cao Lãnh, Đồng Tháp</p>
+        <p>Điện thoại: 0123 456 789 - Email: Chi@hoatuoi.com</p>
+    </footer>
+</body>
+</html>
